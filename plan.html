@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Routine Exercise</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul class="navbar-home">
+          <li><a href="index.html" class="home-btn"><i class="fas fa-home"></i> ⾕</a></li>
+        </ul>
+      </nav>
+
+    <div class="container">
+        <h2>Weekly Routine Exercise</h2>
+        <label for="day">Select Day:</label>
+        <select id="day" onchange="displayRoutine()">
+            <option value="----">----</option>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+        </select>
+        <input type="text" id="exercise" placeholder="Exercise name">
+        <input type="number" id="duration" placeholder="Duration (min)">
+        <button onclick="addExercise()">Add Exercise</button>
+        <button onclick="clearRoutine()">Clear All</button>
+        <div id="routine"></div>
+    </div>
+</body>
+</html>

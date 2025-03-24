@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story of My Life</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <audio id="bg-music" autoplay loop>
+        <source src="Music1.mp3" type="audio/mpeg">
+    </audio>
+    <button id="music-btn" onclick="toggleMusic()">🎵</button>
+
+    <nav class="navbar">
+        <ul class="navbar-home">
+            <li><a href="index.html" class="active"><i class="fas fa-home"></i> ⾕</a></li>
+        </ul>
+        <div id="menu-container">
+            <button class="menu-toggle" onclick="toggleMenu()">☰ </button>
+            <ul id="nav-links">
+                <li><a href="chapters.html" class="nav-link"><i class="fas fa-list"></i> Chapters</a></li>
+                <li><a href="gallery.html" class="nav-link"><i class="fas fa-album"></i> Gallery</a></li>
+                <li><a href="contact.html" class="nav-link"><i class="fas fa-address-book"></i> Contact</a></li>
+                <li><a href="plan.html" class="nav-link"><i class="fas fa-plan"></i> Exercise Plan</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="story">
+    <div class="home-content">
+        <img src="home.jpg" alt="Your Story Image" class="home-image">
+        <h1>Welcome to My Story</h1>
+        <p>A journey through passion, challenges, and personal growth.</p>
+        <a href="chapters.html" class="btn">Start Reading</a>
+    </div>
+</header>
+
+
+    <footer>
+        <p>&copy; 2024 My Life Story</p>
+    </footer>
+</body>
+</html>
